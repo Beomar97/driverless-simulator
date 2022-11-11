@@ -1,0 +1,3 @@
+[submodule "ros2/src/fszhaw_msgs"]
+	path = ros2/src/fszhaw_msgs
+	url = https://github.zhaw.ch/FSZHAW/fszhaw_msgs.git
