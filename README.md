@@ -16,7 +16,20 @@ Relevant documentation has been moved to /docs, all other tutorials and docs hav
 
 # Getting Started
 
-1. Clone this repository
+For both setups, at least one machine with a recent Nvidia GPU with Vulkan support is necessary!
+
+[Recommended System Requirements](https://fs-driverless.github.io/Formula-Student-Driverless-Simulator/v2.1.0/getting-started/) for the computer running the simulator:
+
+- 8 core 2.3Ghz CPU
+- 12 GB memory
+- 30GB free SSD storage (120GB when building the unreal project from source)
+- Recent NVidia card with Vulkan support and 3 GB of memory. (You can check the video card drivers by running `vulkaninfo`). Different brand video cards might work but have not been tested.
+
+**Setup #1: One Linux Machine running both the Simulator and the Autonomous System**
+
+1. Clone this repository in your [**home directory**](https://fs-driverless.github.io/Formula-Student-Driverless-Simulator/v2.1.0/getting-started-with-ros/)
+
+   > **THE REPO HAS TO BE CLONED IN THE HOME DIRECTORY!**. So the repo location should be `$HOME/Formula-Student-Driverless-Simulator`. Why you ask? Because we couldn't get relative paths in the C++ code to work so now we have hard-coded some paths to the home directory. I know yes it is ugly but it works. If you are bothered by it I would welcome you to open a pr with a fix.
 
 2. Download the Unreal Engine 4 Project from the public iCloud link (see *UE4Project.md* for more details)
 
@@ -33,6 +46,10 @@ Relevant documentation has been moved to /docs, all other tutorials and docs hav
 5. Run the simulator via the Python Script
 
    `python3 setup_simulation_ros2bridge.py`
+
+**Setup #2: Two Machines, one running the Autonomous System & ROS Bridge and one running the Simulator**
+
+1. tbd
 
 # Available Vehicles
 
